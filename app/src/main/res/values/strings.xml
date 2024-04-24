@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Skalowanie</string>
+
+    <string name="sytuacja_label">Sytuacja</string>
+    <string name="achievements_label">Moje osiągnięcia</string>
+    <string name="to_do_label">Co jeszcze moge zrobić</string>
+    <string name="convictions_label">Przekonania</string>
+    <string name="advocate_label">Adwokat</string>
+    <string name="print_button_label">Drukuj</string>
+
+</resources>

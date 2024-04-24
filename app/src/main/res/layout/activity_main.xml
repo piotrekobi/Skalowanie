@@ -1,0 +1,226 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sytuacja_label" />
+        <EditText
+            android:id="@+id/editTextSytuacja"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_weight="2"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <TextView android:layout_width="wrap_content"  android:layout_weight="1" android:text=" " />
+            <TextView android:layout_width="wrap_content" android:layout_weight="1" android:text="Przed sytuacją" android:textSize="12sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_weight="1" android:text="W trakcie sytuacji" android:textSize="12sp" />
+            <TextView android:layout_width="wrap_content" android:layout_weight="1" android:text="Po sytuacji" android:textSize="12sp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_width="wrap_content" android:text="MYŚLI" />
+            <EditText android:id="@+id/editTextMysliBefore" android:layout_width="0dp" android:layout_weight="1"
+                android:inputType="textCapSentences|textMultiLine" android:gravity="top|start" android:textSize="12sp"/>
+            <EditText android:id="@+id/editTextMysliDuring" android:layout_width="0dp" android:layout_weight="1"
+                android:inputType="textCapSentences|textMultiLine" android:gravity="top|start" android:textSize="12sp"/>
+            <EditText android:id="@+id/editTextMysliAfter" android:layout_width="0dp" android:layout_weight="1"
+                android:inputType="textCapSentences|textMultiLine" android:gravity="top|start" android:textSize="12sp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_width="wrap_content" android:text="EMOCJE" />
+            <EditText android:id="@+id/editTextEmotionsBefore" android:layout_width="0dp" android:layout_weight="1"
+                android:inputType="textCapSentences|textMultiLine" android:gravity="top|start" android:textSize="12sp"/>
+            <EditText android:id="@+id/editTextEmotionsDuring" android:layout_width="0dp" android:layout_weight="1"
+                android:inputType="textCapSentences|textMultiLine" android:gravity="top|start" android:textSize="12sp"/>
+            <EditText android:id="@+id/editTextEmotionsAfter" android:layout_width="0dp" android:layout_weight="1"
+                android:inputType="textCapSentences|textMultiLine" android:gravity="top|start" android:textSize="12sp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_width="wrap_content" android:text="CIAŁO" />
+            <EditText android:id="@+id/editTextBodyBefore" android:layout_width="0dp" android:layout_weight="1"
+                android:inputType="textCapSentences|textMultiLine" android:gravity="top|start" android:textSize="12sp"/>
+            <EditText android:id="@+id/editTextBodyDuring" android:layout_width="0dp" android:layout_weight="1"
+                android:inputType="textCapSentences|textMultiLine" android:gravity="top|start" android:textSize="12sp"/>
+            <EditText android:id="@+id/editTextBodyAfter" android:layout_width="0dp" android:layout_weight="1"
+                android:inputType="textCapSentences|textMultiLine" android:gravity="top|start" android:textSize="12sp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_width="wrap_content" android:text="ZACHOWANIE" />
+            <EditText android:id="@+id/editTextBehaviorBefore" android:layout_width="0dp" android:layout_weight="1"
+                android:inputType="textCapSentences|textMultiLine" android:gravity="top|start" android:textSize="12sp"/>
+            <EditText android:id="@+id/editTextBehaviorDuring" android:layout_width="0dp" android:layout_weight="1"
+                android:inputType="textCapSentences|textMultiLine" android:gravity="top|start" android:textSize="12sp"/>
+            <EditText android:id="@+id/editTextBehaviorAfter" android:layout_width="0dp" android:layout_weight="1"
+                android:inputType="textCapSentences|textMultiLine" android:gravity="top|start" android:textSize="12sp"/>
+        </TableRow>
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/achievements_label" />
+        <EditText
+            android:id="@+id/editTextAchievements"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_weight="2"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/to_do_label" />
+        <EditText
+            android:id="@+id/editTextToDo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_weight="2"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/convictions_label" />
+        <EditText
+            android:id="@+id/editTextConvictions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_weight="2"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/advocate_label" />
+        <EditText
+            android:id="@+id/editTextAdvocate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_weight="2"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/print_button_label"
+        android:onClick="printDocument"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:id="@+id/formContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Name Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Imię i nazwisko" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Group Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grupa" />
+
+        <EditText
+            android:id="@+id/groupEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Date Selection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data" />
+
+        <!-- Date Input and Checkbox in a Horizontal Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/dateEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:drawableRight="@android:drawable/ic_menu_today" />
+
+            <CheckBox
+                android:id="@+id/useCurrentDateCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Użyj dzisiejszej daty"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+
+
