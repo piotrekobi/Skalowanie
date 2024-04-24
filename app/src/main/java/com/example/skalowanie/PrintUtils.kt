@@ -152,6 +152,9 @@ width: 277mm;
   .minimized-row th {
     border: 1px solid #000;
     padding: 5px; /* Smaller padding */
+    height: 1px;
+    white-space: nowrap; /* Ensure the content does not wrap */
+    
   }
   .no-border {
     border: 0;
@@ -166,14 +169,14 @@ width: 277mm;
     <span class="header-title">Data: $date</span>
   </div>
     <table>
-      <tr>
-        <th class="situation-header-cell">Sytuacja</th>
-        <th class="labels-header-cell"></th>
-        <th class="header-cell">Przed sytuacją</th>
-        <th class="header-cell">W trakcie sytuacji</th>
-        <th class="header-cell">Po sytuacji</th>
-        <th class="header-cell">Moje osiągnięcia</th>
-        <th class="header-cell">Co jeszcze moge zrobić</th>
+      <tr class="minimized-row">
+        <th  class="situation-header-cell">Sytuacja</th>
+        <th  class="labels-header-cell"></th>
+        <th class="minimized-row" class="header-cell">Przed sytuacją</th>
+        <th class="minimized-row" class="header-cell">W trakcie sytuacji</th>
+        <th class="minimized-row" class="header-cell">Po sytuacji</th>
+        <th class="minimized-row" class="header-cell">Moje osiągnięcia</th>
+        <th class="minimized-row" class="header-cell">Co jeszcze moge zrobić</th>
       </tr>
       <tr>
         <td class="situation-cell" rowspan="5"><SPAN STYLE="writing-mode: vertical-rl; transform: rotate(180deg);
