@@ -99,6 +99,7 @@ class TableListActivity : AppCompatActivity() {
         val printAdapter = webView.createPrintDocumentAdapter("Document")
         val printAttributes = PrintAttributes.Builder()
             .setMediaSize(PrintAttributes.MediaSize.ISO_A4.asLandscape())
+            .setDuplexMode(PrintAttributes.DUPLEX_MODE_SHORT_EDGE)
             .build()
         printManager.print("Document", printAdapter, printAttributes)
     }
